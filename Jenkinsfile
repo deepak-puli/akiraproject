@@ -14,7 +14,7 @@ environment {
                 sh 'mvn clean deploy'
             }
         }
-    }
+    
     stage('SonarQube analysis') {
     environment {    
       scannerHome = tool 'valaxy-sonar-scanner'
@@ -25,5 +25,6 @@ environment {
     }
     }
   }
-
+  
+}
 }
