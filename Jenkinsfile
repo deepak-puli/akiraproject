@@ -16,7 +16,7 @@ environment {
         }
     }
     stage('SonarQube analysis') {
-    Environment {    
+    environment {    
       scannerHome = tool 'valaxy-sonar-scanner'
     }
     steps{
